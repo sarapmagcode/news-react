@@ -1,0 +1,18 @@
+
+.navbar {
+    padding: 10px 15px;
+    border-bottom: 1px solid var(--gray-200);
+    background-color: white;
+}
+
+.navbarBrand {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--gray-700);
+    user-select: none;
+}

@@ -1,0 +1,128 @@
+/* ================== SEARCH FORM ================== */
+.searchForm {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.searchForm div {
+    flex: 1;
+    display: flex;
+}
+
+.searchForm div .searchInput {
+    width: 100%;
+}
+
+.searchForm div .clearSearchBtn {
+    background: none;
+    outline: none;
+    box-shadow: none;
+    margin-left: -50px;
+}
+
+.searchForm div .clearSearchBtn:hover {
+    border-color: transparent;
+}
+
+/* ================== NEWS LIST/ITEM ================== */
+.newsList .newsItem {
+    margin: 15px 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.newsList .newsItem:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.newsList .newsItem .newsTitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--gray-700);
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.newsList .newsItem .newsTitle:hover {
+    color: var(--primary-color);
+}
+
+.newsList .newsItem .newsMeta {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.875rem;
+    color: var(--gray-500);
+    margin-bottom: 1rem;
+}
+
+.newsList .newsItem .newsMeta span {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.newsList .newsItem .newsMeta .newsDescription {
+    color: var(--gray-500);
+    margin-bottom: 1rem;
+}
+
+/* ================== PAGINATION ================== */
+.paginatorActions {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.paginatorActions button {
+    display: flex;
+    align-items: center;
+}
+
+.paginatorActions button svg {
+    width: 1.5rem;
+}
+
+/* ================== SKELETON SCREEN ================== */
+.newsItem .newsTitleSkeleton {
+    height: 1.6rem;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+.newsItem .newsMetaSkeleton {
+    display: flex;
+    gap: 0.9rem;
+    margin: 1rem 0;
+}
+
+.newsItem .newsMetaSkeleton div {
+    width: 10rem;
+    height: 1.4rem;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+.newsItem .newsDescSkeleton {
+    height: 3rem;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* ================== ANIMATIONS ================== */
+@keyframes pulse {
+    0% {
+        background-color: #eee;
+    }
+
+    50% {
+        background-color: #ddd;
+    }
+
+    100% {
+        background-color: #eee;
+    }
+}
